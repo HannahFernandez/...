@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int in, i;
+    float n[100], sum=0.0, average;
+
+    cout << "Enter the numbers of data: ";
+    cin >> in;
+
+    while (in > 100 || in <= 0)
+    {
+        cout << "Error! number should in range of (1 to 100)." << endl;
+        cout << "Enter the number again: ";
+        cin >> in;
+    }
+
+    for(i = 0; i < in; ++i)
+    {
+        cout << i + 1 << ". Enter number: ";
+        cin >> n[i];
+        sum += n[i];
+    }
+
+    average = sum / in;
+    cout << "Average = " << average << endl << endl;
+
+    cout << "By: Hannah";
+    return 0;
+}
