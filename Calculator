@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   float one,two,answer;
+   int operation;
+
+    cout << "CALCULATOR\n\n";
+    
+    while (true)
+    {
+     cout << "1. Add\n" <<
+             "2. Subtraction\n" <<
+             "3. Multiplication\n" <<
+             "4. Division\n" <<
+             "5. Exit\n\n" <<
+             "Choose a number: ";
+        
+     cin >> operation;
+    
+        if (operation == 5)
+        break;
+        
+     cout << "\nEnter the first number: "; 
+     cin >> one;
+     cout << "Enter the second number: ";
+     cin >> two;
+    
+    if (operation == 1)
+      answer = one + two;
+    else if (operation == 2)
+      answer = one - two;
+    else if (operation == 3)
+      answer = one * two;
+    else if (operation == 4)
+      answer = one / two;
+    
+    cout << "\nThe answer is " << answer << "\n\n";
+    }
+    
+    return 0;
+}
